@@ -20,6 +20,10 @@ class Waiter
     Meals.all.select {|meal| meal.waiter == self}
   end
   
+  def best_tipper
+    meals.all.each {|meal| meal.customer}
+  end
+  
   
   
 end
