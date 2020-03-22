@@ -21,7 +21,7 @@ class Waiter
   end
   
   def best_tipper
-    meals.all.each {|meal| meal.customer}
+    meals.all.each {|meal| meal.customer == self}
   end
   
   
